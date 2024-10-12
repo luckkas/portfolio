@@ -1,0 +1,50 @@
+/* Writing effect */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+from, to { border-color: transparent; }
+50% { border-color: var(--primary-neon); }
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+}
+
+.home__title {
+  font-size: 2.5em;
+  color: var(--primary-neon);
+  text-shadow: 0 0 5px var(--primary-neon), 0 0 10px var(--primary-neon);
+}
+
+.home__intro-text {
+  font-size: 1.2em;
+  color: var(--metallic);
+  max-width: 600px;
+  margin-top: 20px;
+  border-right: 2px solid var(--primary-neon);
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0; /* Initial width for typing animation */
+  animation: typing 3s steps(40, end) forwards,
+    blink-caret 0.75s step-end infinite;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: var(--metallic);
+  font-size: 0.9em;
+  background-color: #0d0221;
+}
+
+.footer__link {
+  color: var(--primary-neon);
+  text-decoration: none;
+}

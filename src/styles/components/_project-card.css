@@ -1,0 +1,52 @@
+.project-card {
+  width: 250px;
+  padding: 15px;
+  background-color: #1c1c3a;
+  border-radius: 8px;
+  box-shadow: 0 0 10px var(--metallic);
+  transition: transform 0.3s ease;
+  text-align: center;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card__image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.project-card__title {
+  font-size: 1.5em;
+  color: var(--primary-neon);
+  margin: 10px 0;
+  text-shadow: 0 0 5px var(--primary-neon), 0 0 10px var(--primary-neon);
+}
+
+.project-card__description {
+  color: var(--metallic);
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+.project-card__link {
+  text-decoration: none;
+}
+
+.project-card__button {
+  background-color: var(--secondary-neon);
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  font-weight: bold;
+}
+
+.project-card__button:hover {
+  box-shadow: 0 0 10px var(--secondary-neon), 0 0 20px var(--secondary-neon);
+}
