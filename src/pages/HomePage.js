@@ -1,23 +1,22 @@
-import { NavBar } from '../components/NavBar'
-
+import { projects } from '../utils/data'
+import { ProjectPage } from './ProjectPage'
 
 /**
  * @returns { HTMLDivElement }
  */
 export function HomePage() {
-  const home = document.createElement('div')
+  const home = document.createElement('section')
   home.className = 'home'
   
-  const navbar = NavBar()
-  home.appendChild(navbar)
-
-  const intro = document.createElement('section')
+  const intro = document.createElement('div')
   intro.className = 'home__intro'
   intro.innerHTML = `
     <h1 class="home__title">Welcome to My Retro-Futuristic Portfolio</h1>
-    <p class="home__intro-text">Full-Stack Developer with a passion for retro aesthetics.</p>
+    <p class="home__intro-text">This is where I showcase my projects and skills.</p>
   `
+  home.appendChild(intro)  
+  home.appendChild(ProjectPage(projects.filter((p) => p.highlight)))
   
-  home.appendChild(intro)
+  
   return home
 }

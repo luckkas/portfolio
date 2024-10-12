@@ -7,6 +7,8 @@ import { ProjectCard } from '../components/ProjectCard'
  *  description: string
  *  link: string
  *  image: string
+ *  highlight: boolean,
+: string
  * }[]} projects
  * @returns { HTMLDivElement }
  */
