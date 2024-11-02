@@ -11,10 +11,10 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     rollupOptions: {
-      input: './src/index.html', 
+      input: './index.html', 
     },
   },
   server: {
-    open: '/src/index.html', 
+    open: '/index.html', 
   },
 })
